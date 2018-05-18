@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
+        crossorigin="anonymous">
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <style>
+        #btn {
+            background-color: rgb(205, 210, 212);
+            color: rgb(78, 78, 78);
+            border-color: rgb(184, 186, 187)
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Button trigger modal -->
+    <div class="container-fluid">
+        <p>
+            <h2>這是可愛的bootstrap練習作業</h2>
+        </p>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+            新增一張卡片
+        </button>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modelTitleId">Bootstrap作業練習</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="font-family:微軟正黑體;">
+                    <div class="row">
+                        <div class="col-8">
+                            位於文件列表
+                            <a href="#" class="badge">
+                                <h6>練習中/作業中</h6>
+                            </a>
+                            </br>
+                            </br>
+                            <div class="form-group">
+                                <label for="">描述</label>
+                                <textarea class="form-control" name="" id="" rows="3"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="btn">儲存</button>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="form-group">
+                                <label for="">新增評論</label>
+                                <textarea class="form-control" name="" id="" rows="3"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="btn">儲存</button>
+                            <p style="margin-top:3%">活動
+                                <p>黃裕恆再次編輯了這張卡片</p>
+                                <p>黃裕恆編輯了這張卡片</p>
+                        </div>
+                        <div class="col-4">
+                            新增</br>
+                            <button type="button" class="btn btn-primary btn-block text-left" id="btn">
+                                <i class="fas fa-user"></i>&nbsp;成員</button>
+                            <button type="button" class="btn btn-primary btn-block text-left" id="btn" style="margin-top:1%">
+                                <i class="fas fa-tag"></i>&nbsp;標籤</button>
+                            <button type="button" class="btn btn-primary btn-block text-left" id="btn" style="margin-top:1%">
+                                <i class="fas fa-check-square"></i>&nbsp;待辦清單</button>
+                            <button type="button" class="btn btn-primary btn-block text-left" id="btn" style="margin-top:1%">
+                                <i class="fas fa-clock"></i>&nbsp;到期日</button>
+                            <button type="button" class="btn btn-primary btn-block text-left" id="btn" style="margin-top:1%">
+                                <i class="fas fa-paperclip"></i>&nbsp;附近</button>
+                            </br>
+                            </br>
+                            </br>
+                            強化功能
+                            <button type="button" class="btn btn-primary btn-block  text-left" id="btn" style="font-size:13px;">
+                                <i class="fab fa-google-drive"></i>&nbsp;Google雲端硬碟</button>
+                            </br>
+                            </br>
+                            </br>
+                            動作
+                            </br>
+                            <button type="button" class="btn btn-primary btn-block text-left" id="btn">
+                                <i class="fas fa-long-arrow-alt-right"></i>&nbsp;移動</button>
+                            </br>
+                            <button type="button" class="btn btn-primary btn-block text-left" id="btn" style="margin-top:1%">
+                                <i class="fas fa-credit-card"></i>&nbsp;複製</button>
+                            <button type="button" class="btn btn-primary btn-block text-left" id="btn" style="margin-top:1%">
+                                <i class="fas fa-eye"></i>&nbsp;立即觀看</button>
+                            <a>_______________</a>
+                            <a></a>
+                            <button type="button" class="btn btn-primary btn-block text-left" id="btn">
+                                <i class="fas fa-archive"></i>&nbsp;封存</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary text-left" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary text-left">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
