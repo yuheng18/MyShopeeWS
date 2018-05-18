@@ -15,6 +15,19 @@
             margin: auto;
             box-shadow: 0 0 30px;
         }
+
+        #BtnHover {
+            border-radius: 50px 25px;
+            box-shadow: 0 0 50px;
+            background-color: black;
+            color: white;
+        }
+
+        #BtnHover:hover {
+            box-shadow: 0 0 50px;
+            background-color: white;
+            color: black;
+        }
     </style>
     <title>Title</title>
     <!-- Required meta tags -->
@@ -31,10 +44,10 @@
         <div class="row">
             <div class="col bg-dark">
                 <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top" id="navbar1">
-                    <a class="navbar-brand" href="#">Navbar</a>
+                    <a class="navbar-brand" href="#">裕恆的作品集</a>
                     <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                         aria-expanded="false" aria-label="Toggle navigation"></button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <!-- <div class="collapse navbar-collapse" id="collapsibleNavId">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="navbar2">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#" style="color:white;">Home
@@ -57,7 +70,7 @@
                             <input class="form-control mr-sm-2" type="text" placeholder="Search">
                             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                         </form>
-                    </div>
+                    </div> -->
                 </nav>
             </div>
         </div>
@@ -66,13 +79,20 @@
     <div class="container">
         <div class="row">
             <div class="col mt-5">
-                <h1 style="font-size:100px;">Hello world!</h1>
-                <h1>123123123123123333333333 123 123 123123 123 123123 123 123123 123 123123 123 123123 123 123123 123 123123
-                    123 123123 123 123123 123 123123 123 123123 123 123123 123 123123 123 123123 123 123123 123 123123 123
-                    123123 123 123</h1>
+                <h1 style="font-size:90px;" class="display-3 mt-5">
+                    <strong>歡迎來到裕恆作品集網頁</strong>
+                </h1>
+                <h5>這裡是我在大學期間所做的作品，以下有各作品之簡短說明以及連結按鈕。 各作品中所使用的技術包括：
+                </h5>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>BootStrap</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+                <li>C#</li>
                 </br>
-                <a name="" id="" class="btn btn-primary" href="#" role="button">
-                    <h3>Learn more>></h3>
+                <a class="btn btn-lg" href="/CSS/Resume.html" role="button" id="BtnHover">我的個人履歷 &raquo;</a>
+
                 </a>
                 </br>
                 </br>
