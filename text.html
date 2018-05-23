@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<style>
+    h1.ml8 {
+        font-weight: 900;
+        font-size: 4.5em;
+        color: #fff;
+        width: 3em;
+        height: 3em;
+    }
+
+    .ml8 .letters-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        height: 1em;
+    }
+
+    .ml8 .letters {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        line-height: 0.7em;
+        right: -0.12em;
+        top: -0.2em;
+    }
+
+    .ml8 .bang {
+        font-size: 1.4em;
+        top: auto;
+        left: -0.06em;
+    }
+
+    .ml8 .circle {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+    }
+
+    .ml8 .circle-white {
+        width: 3em;
+        height: 3em;
+        border: 2px dashed white;
+        border-radius: 2em;
+    }
+
+    .ml8 .circle-dark {
+        width: 3em;
+        height: 3em;
+        background-color: #4f7b86;
+        border-radius: 3em;
+        z-index: 1;
+    }
+
+    .ml8 .circle-dark-dashed {
+        border-radius: 3.2em;
+        background-color: transparent;
+        border: 2px dashed #4f7b86;
+        width: 3.2em;
+        height: 3.2em;
+    }
+</style>
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <link src="/CSS/loading.css/">
+    <link src="/JavaScript/Untitled-1.js"/> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+</head>
+
+<body style="background-color:rgb(152, 190, 200);" id="loading">
+    <div>
+    <h1 class="ml8">
+        <span class="letters-container">
+            <span class="letters letters-left text-center" style="z-index:3; padding-left:700px;">hi</span>
+            <span class="letters bang">!</span>
+        </span>
+        <span class="circle circle-white"></span>
+        <span class="circle circle-dark"></span>
+        <span class="circle circle-container">
+            <span class="circle circle-dark-dashed"></span>
+        </span>
+    </h1>
+</div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>anime.timeline({ loop: true })
+            .add({
+                targets: '.ml8 .circle-white',
+                scale: [0, 3],
+                opacity: [1, 0],
+                easing: "easeInOutExpo",
+                rotateZ: 360,
+                duration: 1100
+            }).add({
+                targets: '.ml8 .circle-container',
+                scale: [0, 1],
+                duration: 1100,
+                easing: "easeInOutExpo",
+                offset: '-=1000'
+            }).add({
+                targets: '.ml8 .circle-dark',
+                scale: [0, 1],
+                duration: 1100,
+                easing: "easeOutExpo",
+                offset: '-=600'
+            }).add({
+                targets: '.ml8 .letters-left',
+                scale: [0, 1],
+                duration: 1200,
+                offset: '-=550'
+            }).add({
+                targets: '.ml8 .bang',
+                scale: [0, 1],
+                rotateZ: [45, 15],
+                duration: 1200,
+                offset: '-=1000'
+            }).add({
+                targets: '.ml8',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1400
+            });
+
+        anime({
+            targets: '.ml8 .circle-dark-dashed',
+            rotateZ: 360,
+            duration: 8000,
+            easing: "linear",
+            loop: true
+        });</script>
+    <script>
+        
+        setTimeout("$('#loading').hide(5000)",5000);
+    </script>
+</body>
+
+
+</html>

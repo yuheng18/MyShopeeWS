@@ -14,6 +14,8 @@
             position: relative;
             margin: auto;
             box-shadow: 0 0 30px;
+            transition: transform 0.3s;
+
         }
 
         #BtnHover {
@@ -56,6 +58,21 @@
             text-decoration: none;
             color: #ffffff;
         }
+
+        #loading {
+            z-index: 1;
+            padding: 10px 10px 5px;
+            background: rgb(255, 0, 136);
+            left: 0;
+            top: 0;
+            color: #fff;
+            position: fixed;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            box-shadow: 2px 2px 10px;
+            border-radius: 5px;
+        }
     </style>
     <title>Title</title>
     <!-- Required meta tags -->
@@ -78,6 +95,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col bg-dark">
+                        <div id='loading'>正在載入頁面資料...</div>
                         <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top" id="navbar1">
                             <a class="navbar-brand animated fadeInDown" style="animation-duration: 0.5s;" href="#">裕恆的作品集</a>
 
@@ -212,6 +230,7 @@
                 </div>
             </div>
         </div>
+
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -226,6 +245,7 @@
         <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
     </a>
     <script>
+
         jQuery(document).ready(function () {
             var offset = 220;
             var duration = 500;
@@ -258,7 +278,15 @@
                 return false;
             })
         });
-       
+
+        $(window).load(function () {
+            $('#loading').hide(1000);
+        });
+
+
+
+
+
     </script>
 </body>
 
