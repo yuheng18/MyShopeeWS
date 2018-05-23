@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>裕恆的作品集</title>
+    <style>
+        #navbar1>a {
+            color: white;
+        }
+
+        #image:hover {
+            transform: scale(2);
+            z-index: 3;
+            position: relative;
+            margin: auto;
+            box-shadow: 0 0 30px;
+            transition: transform 0.3s;
+
+        }
+
+        #BtnHover {
+            border-radius: 50px 25px;
+            box-shadow: 0 0 50px;
+            background-color: black;
+            color: white;
+        }
+
+        #BtnHover:hover {
+            box-shadow: 0 0 50px;
+            background-color: white;
+            color: black;
+        }
+
+        #TextTitle {
+            animation-delay: 0.3s;
+        }
+
+        .back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 5em;
+            right: 2em;
+            text-decoration: none;
+            color: white;
+            background-color: rgb(100, 154, 243);
+            font-size: 12px;
+            padding: 1em;
+            padding-left: 20px;
+            padding-top: 18px;
+            width: 5em;
+            height: 5em;
+            border-radius: 150em;
+            box-shadow: 0 0 5px;
+        }
+
+        .back-to-top:hover {
+            background-color: rgb(98, 139, 172);
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        #loading {
+            z-index: 1;
+            padding: 10px 10px 5px;
+            background: rgb(255, 0, 136);
+            left: 0;
+            top: 0;
+            color: #fff;
+            position: fixed;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            box-shadow: 2px 2px 10px;
+            border-radius: 5px;
+        }
+    </style>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+
+</head>
+
+<body style="font-family:微軟正黑體;">
+    <div id="BackGroundImage">
+        <div id="body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col bg-dark">
+                        <div id='loading'>正在載入頁面資料...</div>
+                        <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top" id="navbar1">
+                            <a class="navbar-brand animated fadeInDown" style="animation-duration: 0.5s;" href="#">裕恆的作品集</a>
+
+                            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                                aria-expanded="false" aria-label="Toggle navigation"></button>
+
+                            <!-- 控制項 -->
+                            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="navbar2">
+                                    <li class="nav-item active">
+                                        <!-- <a class="nav-link" href="#" style="color:white;">Home
+                                        <span class="sr-only">(current)</span>
+                                    </a> -->
+                                    </li>
+                                    <li class="nav-item">
+                                        <!-- <a class="nav-link" href="#footer" style="color:white;">Link</a> -->
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <!-- <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    style="color:white;">Dropdown</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="#">Action 1</a>
+                                    <a class="dropdown-item" href="#">Action 2</a>
+                                </div> -->
+                                    </li>
+                                </ul>
+                                <form class="form-inline my-2 my-lg-0">
+                                    <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                                    <a class="navbar-brand animated fadeInDown" style="animation-duration: 0.5s; color:white;" id="Clickbody" href="#body">Home</a>
+                                    <a class="navbar-brand animated fadeInDown" style="animation-duration: 0.5s; color:white;" id="ClickWork" href="#Work">Work</a>
+                                    <a class="navbar-brand animated fadeInDown" style="animation-duration: 0.5s; color:white;" id="Clickfooter" href="#footer">Contact</a>
+                                </form>
+                            </div>
+                            <!-- 控制項 END -->
+                        </nav>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col mt-5">
+                <h1 style="font-size:90px;" id="TextTitle" class="display-3 mt-5 animated fadeInDown" style="animation-delay:10s;">
+                    <strong>歡迎來到裕恆作品集網頁</strong>
+                </h1>
+                <h5 class="animated fadeInDown" style="animation-duration: 0.5s; animation-delay:0.9s;">這裡是我在大學期間所做的作品，以下有各作品之簡短說明以及連結按鈕。 各作品中所使用的技術包括：
+                </h5>
+                <li class="animated fadeInDown" style="animation-duration: 0.5s; animation-delay:1.1s;">HTML</li>
+                <li class="animated fadeInDown" style="animation-duration: 0.5s; animation-delay:1.3s;">CSS</li>
+                <li class="animated fadeInDown" style="animation-duration: 0.5s; animation-delay:1.5s;">BootStrap</li>
+                <li class="animated fadeInDown" style="animation-duration: 0.5s; animation-delay:1.7s;">JavaScript</li>
+                <li class="animated fadeInDown" style="animation-duration: 0.5s; animation-delay:1.9s;">JQuery</li>
+                <li class="animated fadeInDown" style="animation-duration: 0.5s; animation-delay:2.1s;">C#</li>
+                </br>
+                <a class="btn btn-lg animated fadeInDown" style="animation-duration: 0.5s; animation-delay:2.3s;" href="/CSS/Resume.html"
+                    role="button" id="BtnHover">我的個人履歷 &raquo;</a>
+
+                </a>
+                <!-- id=Work -->
+                <div id="Work" style="top:1em;">
+
+                    </br>
+                    </br>
+                    </br>
+                    <hr/>
+                    </br>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <h1 style="font-size:50px;">蝦皮刻板</h1>
+                            <a href="/作品集/蝦皮首頁/蝦皮首頁.html" style="text-decoration:none;">
+                                <img src="/作品集/蝦皮首頁/作品1-蝦皮.png" width="100%" class="img" id="image" alt="">
+
+                                <a name="" id="" class="btn btn-dark" href="/作品集/蝦皮首頁/蝦皮首頁.html" role="button" style="margin-top:5%">View Details>></a>
+                        </div>
+                        <div class="col-4">
+                            <h1 style="font-size:50px;">肉球新聞</h1>
+                            <a href="/作品集/肉球新聞/肉球新聞.html" style="text-decoration:none;">
+                                <img src="/作品集/肉球新聞/肉球新聞首頁.png" width="100%" class="img" id="image" alt="">
+
+                                <a name="" id="" class="btn btn-dark" href="/作品集/肉球新聞/肉球新聞.html" role="button" style="margin-top:8%">View Details>></a>
+                        </div>
+                        <div class="col-4">
+                            <h1 style="font-size:43px;">Build School刻板</h1>
+                            <a href="/作品集/Build School練習/Build School練習.html" style="text-decoration:none;">
+                                <img src="/作品集/Build School練習/BuildSchool首頁截圖.png" style="margin-top:3%" width="100%" class="img" id="image" alt="">
+                                <a name="" id="" class="btn btn-dark" href="/作品集/Build School練習/Build School練習.html" role="button" style="margin-top:6%">View Details>></a>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:10%">
+                        <div class="col-4">
+                            <h1 style="font-size:50px;">Trello刻板</h1>
+                            <a href="/作品集/Trello/Trello卡片.html" style="text-decoration:none;">
+                                <img src="/作品集/Trello/Trello首頁.png" width="30%" class="img" id="image" alt="" style="display:block; margin-left:20%;">
+
+                                <a name="" id="" class="btn btn-dark" href="/作品集/Trello/Trello卡片.html" role="button" style="margin-top:5%">View Details>></a>
+                        </div>
+                        <div class="col-4">
+                            <h1 style="font-size:50px;">終極密碼</h1>
+                            <a href="/作品集/終極密碼/終極密碼.html" style="text-decoration:none;">
+                                <img src="/作品集//終極密碼/終極密碼.png" width="40%" class="img" id="image" alt="" style="display:block; margin-left:10%;">
+
+                                <a name="" id="" class="btn btn-dark" href="/作品集/終極密碼/終極密碼.html" role="button" style="margin-top:5%">View Details>></a>
+                        </div>
+                        <div class="col-4">
+                            <h1 style="font-size:43px;">預估交通費</h1>
+                            <a href="/作品集/預估交通費/預估交通費.html" style="text-decoration:none;">
+                                <img src="/作品集/預估交通費/預估交通費.png" style="margin-top:3%" width="110%" class="img" id="image" alt="">
+                                <a name="" id="" class="btn btn-dark" href="/作品集/預估交通費/預估交通費.html" role="button" style="margin-top:6%">View Details>></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END div -->
+                <!-- go-top -->
+                <div id="footer">
+                    <div class="container">
+                        <!-- <div class="row">
+                            <div class="col text-center">
+                                <a href="#" id="goTop">go-top</a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <hr/>
+                    <h5 class="text-center">© 2018 Make by[黃裕恆] </h5>
+                    <h5 class="text-center">Email：yuheng18@gmail.com</h5>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <a href="#" class="back-to-top">
+        <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+    </a>
+    <script>
+
+        jQuery(document).ready(function () {
+            var offset = 220;
+            var duration = 500;
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > offset) {
+                    jQuery('.back-to-top').fadeIn(duration);
+                } else {
+                    jQuery('.back-to-top').fadeOut(duration);
+                }
+            });
+
+            jQuery('.back-to-top').click(function (event) {
+                event.preventDefault();
+                jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                return false;
+            })
+            jQuery('#Clickbody').click(function (event) {
+                event.preventDefault();
+                jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                return false;
+            })
+            jQuery('#ClickWork').click(function (event) {
+                event.preventDefault();
+                jQuery('html, body').animate({ scrollTop: 470 }, duration);
+                return false;
+            })
+            jQuery('#Clickfooter').click(function (event) {
+                event.preventDefault();
+                jQuery('html, body').animate({ scrollTop: 1500 }, duration);
+                return false;
+            })
+        });
+
+    </script>
+</body>
+
+</html>
