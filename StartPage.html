@@ -19,13 +19,28 @@
         }
 
         #BtnHover {
-            border-radius: 50px 25px;
+            border-radius: 100px 100px;
             box-shadow: 0 0 50px;
             background-color: rgb(91, 166, 228);
             color: white;
         }
 
         #BtnHover:hover {
+            box-shadow: 0 0 50px;
+            background-color: white;
+            color: rgb(91, 166, 228);
+        }
+
+        #BtnHoverTOP {
+            border-radius: 100px 100px;
+            box-shadow: 0 0 50px;
+            background-color: rgb(91, 166, 228);
+            color: white;
+            padding: 1em 3em;
+        font-size:1.5em;
+        }
+
+        #BtnHoverTOP:hover {
             box-shadow: 0 0 50px;
             background-color: white;
             color: rgb(91, 166, 228);
@@ -58,21 +73,6 @@
             text-decoration: none;
             color: #ffffff;
         }
-
-        #loading {
-            z-index: 1;
-            padding: 10px 10px 5px;
-            background: rgb(255, 0, 136);
-            left: 0;
-            top: 0;
-            color: #fff;
-            position: fixed;
-            width: 150px;
-            height: 30px;
-            text-align: center;
-            box-shadow: 2px 2px 10px;
-            border-radius: 5px;
-        }
     </style>
     <title>Title</title>
     <!-- Required meta tags -->
@@ -95,7 +95,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col bg-dark">
-                        <div id='loading'>正在載入頁面資料...</div>
+
                         <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top" id="navbar1">
                             <a class="navbar-brand animated fadeInDown" style="animation-duration: 0.5s;" href="#">裕恆的作品集</a>
 
@@ -140,7 +140,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid" style="background-color:rgb(223, 241, 251); padding:0;">
+    <div class="container-fluid" style="background-color:rgb(247, 237, 225); padding:0;">
         <div class="container">
             <div class="row">
                 <div class="col mt-5">
@@ -157,7 +157,7 @@
                     <li class="animated fadeInDown" style="animation-duration: 0.5s; animation-delay:2.1s;">C#</li>
                     </br>
                     <a class="btn btn-lg animated fadeInDown" style="animation-duration: 0.5s; animation-delay:2.3s;" href="https://www.cakeresume.com/s--Vojd9xYsTcDApNMa8uF6Pg--/BuildDemo-yuheng18"
-                        role="button" id="BtnHover">我的個人履歷 &raquo;</a>
+                        role="button" id="BtnHoverTOP">我的個人履歷 &raquo;</a>
 
                     </a>
 
@@ -167,7 +167,7 @@
             </br>
             </br>
             </br>
-            
+
         </div>
         <hr/>
     </div>
